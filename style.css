@@ -1,0 +1,89 @@
+@font-face {
+    .k2d-regular {
+        font-family: "K2D", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-grid {
+    width: 80%;
+    max-width: 1400px;
+
+    margin: 0 auto;
+}
+
+.banner {
+    height: 100vh;
+
+    background-image: url(img/Banner-de-fundo.png);
+    background-repeat: no-repeat;
+}
+
+header .container-grid {
+    height: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    height: 200px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    height: 150px;
+    width: 150px;
+}
+
+
+.menu {
+    width: 850px;
+
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.menu a {
+    font-size: 20px;
+    font-family: "K2D";
+
+    color: white;
+
+    text-decoration: underline transparent;
+    text-decoration-thickness: 2px;
+
+
+    transition: text-decoration 500ms ease;
+
+}
+
+.menu a:hover {
+    text-decoration-color: white;
+
+}
+
+#sobre {
+    height: 800px;
+    padding: 100px 25%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    text-align: center;
+
+}
