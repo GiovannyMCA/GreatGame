@@ -82,7 +82,7 @@ header img {
 
 .menu a:hover {
     text-decoration-color: white;
-
+    padding-bottom: 10px;
 }
 
 #sobre {
@@ -163,26 +163,29 @@ h2 {
 
     cursor: pointer;
 
-    transition: backgrund-color 500ms ease;
+    transition: background-color 500ms ease;
 }
 
 #sobre button:hover {
     background-color: #672A78;
 
-    transition: background-color 500ms ease;
 
 }
 
 #cases {
-    height: 1200px;
+    height: 800px;
     padding: 0 10%;
     margin: 150px 0px 0px 0px;
 
     background-color: #360259;
+
+
+
 }
 
 #cases h2 {
-    padding: 200px 0 200px 0;
+
+    padding: 100px 0 100px 0;
 
     text-align: center;
     color: white;
@@ -191,20 +194,20 @@ h2 {
 }
 
 
-.container {
+
+.container1 {
     position: relative;
     height: 370px;
     width: 300px;
 
-    display: flex;
-    flex-direction: column;
+
 }
 
-.container:hover .flip{
+.container1:hover .flip1 {
     transform: rotateY(180deg);
 }
 
-.flip{
+.flip1 {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -212,11 +215,12 @@ h2 {
     cursor: pointer;
 
     transform-style: preserve-3d;
-    transition: .5s;  
+    transition: .5s;
 
 }
 
-.frente1, .tras1{
+.frente1,
+.tras1 {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -241,8 +245,38 @@ h2 {
     transform: rotateY(180deg);
 }
 
-.frente2, .tras2{
+
+/* segundo card */
+
+.container2 {
+    position: relative;
+    /* bottom: 370px;
+    left: 320px; */
+    height: 370px;
+    width: 300px;
+    
+}
+
+
+.container2:hover .flip2 {
+    transform: rotateY(180deg);
+}
+
+.flip2 {
     position: absolute;
+    width: 100%;
+    height: 100%;
+
+    cursor: pointer;
+
+    transform-style: preserve-3d;
+    transition: .5s;
+
+}
+
+.frente2, .tras2 {
+    position: absolute;
+
     width: 100%;
     height: 100%;
 
@@ -250,7 +284,8 @@ h2 {
     box-shadow: 0px 0px 10px #0000001b;
 
     backface-visibility: hidden;
-
+ 
+    
 }
 
 .frente2 {
@@ -259,9 +294,272 @@ h2 {
 }
 
 .tras2 {
-    /* color: black; */
-    /* background-color: rgb(215, 215, 215); */
-    background-image: url(img/EcosoyCosta.png);
+    background-image: url(img/ecosoyfundo.png);
     background-size: cover;
     transform: rotateY(180deg);
 }
+
+/* Terceiro Card */
+
+.container3 {
+    position: relative;
+    /* bottom: 740px;
+    left: 640px; */
+    height: 370px;
+    width: 300px;
+    
+}
+
+
+.container3:hover .flip3 {
+    transform: rotateY(180deg);
+}
+
+.flip3 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    cursor: pointer;
+
+    transform-style: preserve-3d;
+    transition: .5s;
+
+}
+
+.frente3, .tras3 {
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px #0000001b;
+
+    backface-visibility: hidden;
+ 
+    
+}
+
+.frente3 {
+    background-image: url(img/GoodHealth.png);
+    background-size: cover;
+}
+
+.tras3 {
+    background-image: url(img/Gooheathcosta.png);
+    background-size: cover;
+    transform: rotateY(180deg);
+}
+
+/* Quarto Card */
+
+.container4 {
+    position: relative;
+    /* bottom: 1110px;
+    left: 960px; */
+    height: 370px;
+    width: 300px;
+    
+    
+}
+
+
+.container4:hover .flip4 {
+    transform: rotateY(180deg);
+}
+
+.flip4 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    cursor: pointer;
+
+    transform-style: preserve-3d;
+    transition: .5s;
+
+}
+
+.frente4, .tras4 {
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px #0000001b;
+
+    backface-visibility: hidden;
+ 
+    
+}
+
+.frente4 {
+    background-image: url(img/BIomove.png);
+    background-size: cover;
+}
+
+.tras4 {
+    background-image: url(img/biomovecosta.png );
+    background-size: cover;
+    transform: rotateY(180deg);
+}
+
+.alinhamento {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+
+
+
+#contato {
+    text-align: center;
+    /* margin-bottom: 100px; */
+    background-image: url(img/fundoform\ \(2\).png);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.filtro {
+    height: 100%;
+    width: 100%;
+    padding-bottom: 100px;
+
+    background-color: rgba(0, 0, 0, 0.405);
+}
+
+#contato h2 {
+    padding-top: 80px;
+    margin-bottom: 70px;
+    color: white;
+}
+
+#contato form {
+    
+
+    border-radius: 80px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    color: white;
+    font-family: "K2D";
+    font-size: 17px;
+
+}
+
+
+
+.campo {
+
+
+    text-align: left;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    margin-bottom: 50px;
+}
+
+.campo-descricao {
+
+    text-align: left;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    margin-bottom: 30px;
+}
+
+.campo input {
+    height: 40px;
+    width: 600px;
+
+
+    color: white;
+    background-color: #D9D9D9;
+
+    border: none;
+    border-radius: 4px;
+
+    outline: none;
+
+    text-indent: 10px;
+}
+
+.campo-descricao textarea {
+    width: 600px;
+
+    color: white;
+    background-color: #D9D9D9;
+
+    border: none;
+    border-radius: 4px;
+
+    outline: none;
+
+    padding: 10px;
+
+    resize: none;
+}
+
+.campo label,
+.campo-descricao label {
+    margin-bottom: 15px;
+}
+
+.campo input,
+.campo-descricao textarea {
+    font-family: "K2D";
+    font-size: 17px;
+}
+
+.campo input::placeholder,
+.campo-descricao textarea::placeholder {
+    color: #949494;
+    font-family: "KD2";
+}
+
+.campo input:focus {
+    outline: 2px solid var(--laranja-gamifica);
+}
+
+.campo-descricao textarea:focus {
+    outline: 2px solid var(--laranja-gamifica);
+}
+
+#contato form button {
+    height: 40px;
+    width: 600px;
+
+    background-color: #B841D9;
+    color: white;
+
+    border: none;
+    border-radius: 4px;
+
+    font-size: 17px;
+    font-family: "KD2";
+    font-weight: 700;
+    /* 700 = Bold */
+
+    text-transform: uppercase;
+
+    cursor: pointer;
+
+    transition: background-color 500ms;
+}
+
+#contato form button:hover {
+    background-color: #761591;
+
+}
+
