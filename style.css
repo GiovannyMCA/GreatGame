@@ -20,6 +20,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .container-grid {
     width: 80%;
     max-width: 1400px;
@@ -82,7 +86,7 @@ header img {
 
 .menu a:hover {
     text-decoration-color: white;
-    padding-bottom: 10px;
+    /* padding-bottom: 10px; */
 }
 
 #sobre {
@@ -233,17 +237,29 @@ h2 {
 }
 
 .frente1 {
-    background-image: url(img/GaleSun.png);
+    background-image: url(img/Group\ 121.png);
     background-size: cover;
 }
 
 .tras1 {
     /* color: black; */
     /* background-color: rgb(215, 215, 215); */
-    background-image: url(img/GaleSun-costas.png);
+    background-image: url(img/Group\ 120.png);
     background-size: cover;
     transform: rotateY(180deg);
+
+    color: white;
+    font-family: "K2D";
+    font-size: 12px;
+    text-align: center;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: left;
 }
+
+
 
 
 /* segundo card */
@@ -272,7 +288,11 @@ h2 {
     transform-style: preserve-3d;
     transition: .5s;
 
+    font-family: "K2D";
+    text-align: left;
 }
+
+
 
 .frente2, .tras2 {
     position: absolute;
@@ -294,9 +314,26 @@ h2 {
 }
 
 .tras2 {
-    background-image: url(img/ecosoyfundo.png);
+    background-image: url(img/Frame\ 18\ \(1\).png);
     background-size: cover;
     transform: rotateY(180deg);
+
+    font-family: "K2D";
+    font-size: 12px;
+    text-align: left;
+
+    padding: 20px;
+
+    display: flex;
+flex-direction: column;
+    gap: 10px;
+}
+
+.paragrafo2-2 {
+    width: 60%;
+    font-size: 12px;
+    text-align: left;
+
 }
 
 /* Terceiro Card */
@@ -347,9 +384,19 @@ h2 {
 }
 
 .tras3 {
-    background-image: url(img/Gooheathcosta.png);
+    background-image: url(img/Group\ 82.png);
     background-size: cover;
     transform: rotateY(180deg);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    text-align: left;
+    gap: 15px;
+    padding: 0px 15px 80px 25px;
+    
+    font-family: "K2D";
+    font-size: 12px;
 }
 
 /* Quarto Card */
@@ -401,9 +448,23 @@ h2 {
 }
 
 .tras4 {
-    background-image: url(img/biomovecosta.png );
+    background-image: url(img/Group\ 100.png );
     background-size: cover;
     transform: rotateY(180deg);
+
+    font-family: "K2D";
+    font-size: 11px;
+    text-align: left;
+
+    padding: 15px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.paragrafo1-4 {
+    width: 50%;
 }
 
 .alinhamento {
@@ -484,7 +545,7 @@ h2 {
     width: 600px;
 
 
-    color: white;
+    color: black;
     background-color: #D9D9D9;
 
     border: none;
@@ -498,7 +559,7 @@ h2 {
 .campo-descricao textarea {
     width: 600px;
 
-    color: white;
+    color: black;
     background-color: #D9D9D9;
 
     border: none;
@@ -562,4 +623,277 @@ h2 {
     background-color: #761591;
 
 }
+
+footer {
+    height: 400px;
+
+    font-family: "K2D";
+
+    display: flex;
+    justify-content: space-around;
+
+    padding: 80px;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.links a {
+    color: rgb(43, 43, 43);
+    text-decoration: none;
+
+    font-size: 28px;
+
+}
+
+.links a:hover {
+    color: #B841D9;
+}
+
+footer h2 {
+font-size: 38px;
+}
+
+.conteudo { 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.conteudo a {
+    color: rgb(43, 43, 43);
+    text-decoration: none;
+
+    font-size: 28px;
+}
+
+.conteudo a:hover {
+    color: #B841D9;
+}
+
+footer img {
+    height: 150px;
+    width: 140px;
+
+    display: flex;
+    gap: 25px;
+    justify-content: space-between;
+}
+
+
+.icones {
+    width: 300px;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.icones a{
+    color: black;
+}
+
+.icones a:hover {
+    color: #B841D9;
+
+}
+
+.logo-icones {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media screen and (max-width: 1300px) {
+
+    header {
+        position: relative;
+    }
+
+    header button {
+        width: 50px;
+
+        display: unset;
+
+
+        background: none;
+        border: none;
+    }
+
+    header svg {
+        position: absolute;
+        top: 70px;
+        fill: white;
+
+        height: 80px;
+        width: 80px;
+    }
+
+    nav.menu {
+        height: 500px;
+        width: 350px;
+
+        padding: 0px 30px;
+
+        flex-direction: column;
+        justify-content: space-around;
+
+
+
+        background-color: #000000da;
+
+        position: absolute;
+        right: 0px;
+        top: 165px;
+    }
+
+
+    }
+
+    .card {
+        height: 320px;
+        width: 200px;
+    }
+
+    #contato form {
+        width: 75%;
+    }
+
+    .alinhamento {
+        height: 100%;
+        width: 100%;
+
+        flex-wrap: nowrap;
+
+        gap: 250px;
+
+        overflow-x: auto;
+    }
+
+    .frente1 {
+        height: 400px;
+        width: 280px;
+
+        flex-basis: unset;
+
+        background-size: cover;
+    }
+
+    .flip1 {
+        height: 400px;
+        width: 280px;
+
+        flex-basis: unset;
+
+        background-size: cover;
+    }
+
+    .tras1 {
+        height: 400px;
+        width: 280px;
+
+        flex-basis: unset;
+        
+    }
+
+    .frente:first-child {
+        margin-left: 30px;
+    }
+
+    .frente1:last-child {
+        margin-right: 30px;
+    }
+
+    /* adsfdgl;lkjhgfdsa */
+    .frente2 {
+        height: 400px;
+        width: 280px;
+
+        flex-basis: unset;
+
+        background-size: cover;
+    }
+
+    .flip2 {
+        height: 400px;
+        width: 280px;
+
+        flex-basis: unset;
+
+        background-size: cover;
+    }
+
+    .tras2 {
+        height: 400px;
+        width: 280px;
+
+        flex-basis: unset;
+
+    }
+
+        /* .frente2:first-child {
+            margin-left: 30px;
+        }
+
+        .frente2:last-child {
+            margin-right: 30px;
+        } */
+
+    .frente3 {
+        height: 400px;
+        width: 280px;
+
+        flex-basis: unset;
+
+        background-size: cover;
+    }
+
+    .flip3 {
+        height: 400px;
+        width: 280px;
+
+        flex-basis: unset;
+
+        background-size: cover;
+    }
+
+    .tras3 {
+        height: 400px;
+        width: 280px;
+
+        flex-basis: unset;
+
+    }
+
+
+    .frente4 {
+        height: 400px;
+        width: 280px;
+
+        flex-basis: unset;
+
+        background-size: cover;
+    }
+
+    .flip4 {
+        height: 400px;
+        width: 280px;
+
+        flex-basis: unset;
+
+        background-size: cover;
+    }
+
+    .tras4 {
+        height: 400px;
+        width: 280px;
+
+        flex-basis: unset;
+
+    }
 
