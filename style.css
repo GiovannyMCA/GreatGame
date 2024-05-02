@@ -197,6 +197,11 @@ h2 {
     font-size: 32px;
 }
 
+.alinhamento {
+    height: 100%;
+    width: 100%;
+}
+
 
 
 .container1 {
@@ -237,7 +242,7 @@ h2 {
 }
 
 .frente1 {
-    background-image: url(img/Group\ 121.png);
+    background-image: url(img/image\ 12.png);
     background-size: cover;
 }
 
@@ -752,9 +757,6 @@ footer img {
         top: 165px;
     }
 
-
-    }
-
     .card {
         height: 320px;
         width: 200px;
@@ -773,11 +775,12 @@ footer img {
         gap: 250px;
 
         overflow-x: auto;
+        
     }
 
     .frente1 {
         height: 400px;
-        width: 280px;
+        width: 300px;
 
         flex-basis: unset;
 
@@ -786,7 +789,7 @@ footer img {
 
     .flip1 {
         height: 400px;
-        width: 280px;
+        width: 300px;
 
         flex-basis: unset;
 
@@ -795,7 +798,7 @@ footer img {
 
     .tras1 {
         height: 400px;
-        width: 280px;
+        width: 300px;
 
         flex-basis: unset;
         
@@ -812,7 +815,7 @@ footer img {
     /* adsfdgl;lkjhgfdsa */
     .frente2 {
         height: 400px;
-        width: 280px;
+        width: 300px;
 
         flex-basis: unset;
 
@@ -821,7 +824,7 @@ footer img {
 
     .flip2 {
         height: 400px;
-        width: 280px;
+        width: 300px;
 
         flex-basis: unset;
 
@@ -830,7 +833,7 @@ footer img {
 
     .tras2 {
         height: 400px;
-        width: 280px;
+        width: 300px;
 
         flex-basis: unset;
 
@@ -846,7 +849,7 @@ footer img {
 
     .frente3 {
         height: 400px;
-        width: 280px;
+        width: 300px;
 
         flex-basis: unset;
 
@@ -855,7 +858,7 @@ footer img {
 
     .flip3 {
         height: 400px;
-        width: 280px;
+        width: 300px;
 
         flex-basis: unset;
 
@@ -864,7 +867,7 @@ footer img {
 
     .tras3 {
         height: 400px;
-        width: 280px;
+        width: 300px;
 
         flex-basis: unset;
 
@@ -873,7 +876,7 @@ footer img {
 
     .frente4 {
         height: 400px;
-        width: 280px;
+        width: 300px;
 
         flex-basis: unset;
 
@@ -882,7 +885,7 @@ footer img {
 
     .flip4 {
         height: 400px;
-        width: 280px;
+        width: 300px;
 
         flex-basis: unset;
 
@@ -891,9 +894,160 @@ footer img {
 
     .tras4 {
         height: 400px;
-        width: 280px;
+        width: 300px;
 
         flex-basis: unset;
 
+    }
+}
+
+    @media screen and (max-width: 1100px) {
+        
+
+        #sobre {
+            display: flex;
+            flex-direction: column;
+        }
+
+        #cases .alinhamento {
+            gap: 350px;
+        }
+    }
+
+    @media screen and (max-width: 1000px) {
+
+        #sobre {
+            height: 900px;
+
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #sobre .alinhando-img {
+            height: 100%;
+        }
+        
+        .texto-sobre {
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    
+    @media screen and (max-width: 850px) {
+
+        #sobre {
+            height: 1200px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .alinhando-img {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .texto-sobre {
+            align-items: center;
+            text-align: center;
+        }
+
+        footer {
+            height: 500px;
+        }
+
+        .alinhamento-footer{
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+    }
+
+
+    @media screen and (max-width: 650px) {
+
+
+        .alinhamento {
+            height: 600px;
+        }
+
+        .alinhamento::-webkit-scrollbar {
+            display: none;
+        }
+
+        .alinhamento {
+            -ms-overflow-style: none; 
+            scrollbar-width: none; 
+        }
+
+        form {
+            height: 800px;
+        }
+
+        .campo input {
+            width: 400px;
+
+        }
+
+        .campo-descricao textarea {
+            width: 400px;
+        }
+
+        #contato form button {
+            width: 400px;
+        }
+
+        footer {
+            height: 800px;
+            display: flex;
+            flex-direction: column;
+            align-items: left;
+            gap: 50px;
+        }
+
+        .logo-icones {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+        
+    }
+
+    @media screen and (max-width: 500px){
+
+        header svg {
+                right: 10px;
+        }
+
+        nav.menu {
+            width: 250px;
+        }
+        
+    }
+
+    @media screen and (max-width: 460px) {
+
+        #sobre {
+            height: 1300px;
+        }
+
+        .alinhamento-img {
+            height: 100%;
+
+            display: flex;
+            flex-direction: column;
+        }
+        
+    }
+
+    @media screen and (max-width: 410px) {
+        #sobre {
+            height: 1400px;
+        }
+        
     }
 
