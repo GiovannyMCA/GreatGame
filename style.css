@@ -757,6 +757,16 @@ footer img {
         top: 165px;
     }
 
+
+    .alinhamento::-webkit-scrollbar {
+        display: none;
+    }
+
+    .alinhamento {
+        -ms-overflow-style: none; 
+        scrollbar-width: none; 
+    }
+
     .card {
         height: 320px;
         width: 200px;
