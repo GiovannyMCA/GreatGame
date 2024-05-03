@@ -61,6 +61,9 @@ header img {
     width: 150px;
 }
 
+header button {
+    display: none;
+}
 
 .menu {
     width: 850px;
@@ -636,8 +639,16 @@ footer {
 
     display: flex;
     justify-content: space-around;
+    flex-direction: row;
 
     padding: 80px;
+}
+
+.alinhamento-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 80px;
 }
 
 .links {
@@ -728,6 +739,12 @@ footer img {
 
         background: none;
         border: none;
+
+ 
+    }
+
+    .menu button {
+        display: unset;
     }
 
     header svg {
@@ -737,6 +754,8 @@ footer img {
 
         height: 80px;
         width: 80px;
+
+
     }
 
     nav.menu {
