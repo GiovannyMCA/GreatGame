@@ -1,18 +1,21 @@
 @font-face {
-    .k2d-regular {
-        font-family: "K2D", sans-serif;
-        font-weight: 400;
-        font-style: normal;
-    }
-
-    .anta-regular {
-        font-family: "Anta", sans-serif;
-        font-weight: 400;
-        font-style: normal;
-    }
-
+    font-family: "K2D", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    src: url(font/K2D/K2D-Regular.ttf); 
 }
 
+@font-face {
+    font-family: "Anta", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    src: url(font/Anta/Anta-Regular.ttf);
+}
+
+/* @font-face {
+    font-family: "K2D";
+    src: url(font/K2D);
+} */
 
 * {
     margin: 0;
@@ -210,7 +213,7 @@ h2 {
 .container1 {
     position: relative;
     height: 370px;
-    width: 300px;
+    width: 350px;
 
 
 }
@@ -277,8 +280,8 @@ h2 {
     /* bottom: 370px;
     left: 320px; */
     height: 370px;
-    width: 300px;
-    
+    width: 350px;
+
 }
 
 
@@ -302,7 +305,8 @@ h2 {
 
 
 
-.frente2, .tras2 {
+.frente2,
+.tras2 {
     position: absolute;
 
     width: 100%;
@@ -312,8 +316,8 @@ h2 {
     box-shadow: 0px 0px 10px #0000001b;
 
     backface-visibility: hidden;
- 
-    
+
+
 }
 
 .frente2 {
@@ -333,7 +337,7 @@ h2 {
     padding: 20px;
 
     display: flex;
-flex-direction: column;
+    flex-direction: column;
     gap: 10px;
 }
 
@@ -351,8 +355,8 @@ flex-direction: column;
     /* bottom: 740px;
     left: 640px; */
     height: 370px;
-    width: 300px;
-    
+    width: 350px;
+
 }
 
 
@@ -372,7 +376,8 @@ flex-direction: column;
 
 }
 
-.frente3, .tras3 {
+.frente3,
+.tras3 {
     position: absolute;
 
     width: 100%;
@@ -382,8 +387,8 @@ flex-direction: column;
     box-shadow: 0px 0px 10px #0000001b;
 
     backface-visibility: hidden;
- 
-    
+
+
 }
 
 .frente3 {
@@ -402,7 +407,7 @@ flex-direction: column;
     text-align: left;
     gap: 15px;
     padding: 0px 15px 80px 25px;
-    
+
     font-family: "K2D";
     font-size: 12px;
 }
@@ -414,9 +419,9 @@ flex-direction: column;
     /* bottom: 1110px;
     left: 960px; */
     height: 370px;
-    width: 300px;
-    
-    
+    width: 350px;
+
+
 }
 
 
@@ -436,7 +441,8 @@ flex-direction: column;
 
 }
 
-.frente4, .tras4 {
+.frente4,
+.tras4 {
     position: absolute;
 
     width: 100%;
@@ -446,8 +452,8 @@ flex-direction: column;
     box-shadow: 0px 0px 10px #0000001b;
 
     backface-visibility: hidden;
- 
-    
+
+
 }
 
 .frente4 {
@@ -478,7 +484,7 @@ flex-direction: column;
 .alinhamento {
     display: flex;
     justify-content: space-between;
-    gap: 40px;
+    gap: 30px;
 }
 
 
@@ -493,6 +499,7 @@ flex-direction: column;
     flex-direction: column;
     align-items: center;
 }
+
 .filtro {
     height: 100%;
     width: 100%;
@@ -508,7 +515,7 @@ flex-direction: column;
 }
 
 #contato form {
-    
+
 
     border-radius: 80px;
     margin: 0 auto;
@@ -671,10 +678,10 @@ footer {
 }
 
 footer h2 {
-font-size: 38px;
+    font-size: 38px;
 }
 
-.conteudo { 
+.conteudo {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -709,7 +716,7 @@ footer img {
 
 }
 
-.icones a{
+.icones a {
     color: black;
 }
 
@@ -734,7 +741,7 @@ footer img {
 }
 
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1450px) {
 
     header {
         position: relative;
@@ -749,7 +756,7 @@ footer img {
         background: none;
         border: none;
 
- 
+
     }
 
     .menu button {
@@ -791,8 +798,8 @@ footer img {
     }
 
     .alinhamento {
-        -ms-overflow-style: none; 
-        scrollbar-width: none; 
+        -ms-overflow-style: none;
+        scrollbar-width: none;
     }
 
     .card {
@@ -815,7 +822,7 @@ footer img {
         overflow-x: auto;
 
         background-size: cover;
-        
+
     }
 
     .frente1 {
@@ -841,7 +848,7 @@ footer img {
         width: 300px;
 
         flex-basis: unset;
-        
+
     }
 
     .frente:first-child {
@@ -934,153 +941,152 @@ footer img {
     }
 }
 
-    @media screen and (max-width: 1100px) {
-        
+@media screen and (max-width: 1100px) {
 
-        #sobre {
-            display: flex;
-            flex-direction: column;
-        }
 
-        #cases .alinhamento {
-            gap: 350px;
-        }
+    #sobre {
+        display: flex;
+        flex-direction: column;
     }
 
-    @media screen and (max-width: 1000px) {
-
-        #sobre {
-            height: 900px;
-
-            display: flex;
-            justify-content: space-between;
-        }
-
-        #sobre .alinhando-img {
-            height: 100%;
-        }
-        
-        .texto-sobre {
-            height: 100%;
-            display: flex;
-            justify-content: space-between;
-        }
+    #cases .alinhamento {
+        gap: 350px;
     }
-    
-    @media screen and (max-width: 850px) {
+}
 
-        #sobre {
-            height: 1200px;
-            display: flex;
-            flex-direction: column;
-        }
+@media screen and (max-width: 1000px) {
 
-        .alinhando-img {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
+    #sobre {
+        height: 900px;
 
-        .texto-sobre {
-            align-items: center;
-            text-align: center;
-        }
-
-        footer {
-            height: 500px;
-        }
-
-        .alinhamento-footer{
-            height: 100%;
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
+        display: flex;
+        justify-content: space-between;
     }
 
-
-    @media screen and (max-width: 650px) {
-
-
-        .alinhamento {
-            height: 600px;
-        }
-
-        .alinhamento::-webkit-scrollbar {
-            display: none;
-        }
-
-        .alinhamento {
-            -ms-overflow-style: none; 
-            scrollbar-width: none; 
-        }
-
-        form {
-            height: 800px;
-        }
-
-        .campo input {
-            width: 400px;
-
-        }
-
-        .campo-descricao textarea {
-            width: 400px;
-        }
-
-        #contato form button {
-            width: 400px;
-        }
-
-        footer {
-            height: 800px;
-            display: flex;
-            flex-direction: column;
-            align-items: left;
-            gap: 50px;
-        }
-
-        .logo-icones {
-            display: flex;
-            flex-direction: column;
-            gap: 30px;
-        }
-        
+    #sobre .alinhando-img {
+        height: 100%;
     }
 
-    @media screen and (max-width: 500px){
+    .texto-sobre {
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+}
 
-        header svg {
-                right: 10px;
-        }
+@media screen and (max-width: 850px) {
 
-        nav.menu {
-            width: 250px;
-        }
-        
+    #sobre {
+        height: 1200px;
+        display: flex;
+        flex-direction: column;
     }
 
-    @media screen and (max-width: 460px) {
-
-        #sobre {
-            height: 1300px;
-        }
-
-        .alinhamento-img {
-            height: 100%;
-
-            display: flex;
-            flex-direction: column;
-        }
-        
+    .alinhando-img {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
-    @media screen and (max-width: 410px) {
-        #sobre {
-            height: 1400px;
-        }
-        
+    .texto-sobre {
+        align-items: center;
+        text-align: center;
     }
 
+    footer {
+        height: 500px;
+    }
+
+    .alinhamento-footer {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+
+
+@media screen and (max-width: 650px) {
+
+
+    .alinhamento {
+        height: 600px;
+    }
+
+    .alinhamento::-webkit-scrollbar {
+        display: none;
+    }
+
+    .alinhamento {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+
+    form {
+        height: 800px;
+    }
+
+    .campo input {
+        width: 400px;
+
+    }
+
+    .campo-descricao textarea {
+        width: 400px;
+    }
+
+    #contato form button {
+        width: 400px;
+    }
+
+    footer {
+        height: 800px;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        gap: 50px;
+    }
+
+    .logo-icones {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+
+    header svg {
+        right: 10px;
+    }
+
+    nav.menu {
+        width: 250px;
+    }
+
+}
+
+@media screen and (max-width: 460px) {
+
+    #sobre {
+        height: 1300px;
+    }
+
+    .alinhamento-img {
+        height: 100%;
+
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+@media screen and (max-width: 410px) {
+    #sobre {
+        height: 1400px;
+    }
+
+}
